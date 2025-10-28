@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../styles.css" />
+        <link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+        <script src="../../index.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet" />
+        <title>H!NT.net</title>
+    </head>
+    <body>
+        <div class="body-main-container">
+            <div class="body-main-container-header">
+                <div>
+                    <a href="index.html">
+                        <img id="logo" name="logo" src="../../assets/icons/logo.svg" />
+                        <h1>H!NT</h1>
+                    </a>
+                </div>
+                <a href="../../about.html" class="page-switcher-btn">
+                    <img src="../../assets/icons/about.svg">
+                </a>
+                <a href="../../index.html" class="page-switcher-btn">
+                    <img src="../../assets/icons/home.svg">
+                </a>
+            </div>
+            <div class="hint-selector-bar">
+                <h2>Portal</h2>
+                <select onchange="location = this.options[this.selectedIndex].value;">
+                    <option value="chamber-00a.html">Chamber 00 Part 1</option>
+                    <option value="chamber-00b.html">Chamber 00 Part 2</option>
+                    <option value="chamber-01.html">Chamber 01</option>
+                    <option value="chamber-02.html">Chamber 02</option>
+                    <option value="chamber-03.html">Chamber 03</option>
+                    <option value="chamber-04.html">Chamber 04</option>
+                    <option selected value="chamber-05.html">Chamber 05</option>
+                    <option value="chamber-06.html">Chamber 06</option>
+                    <option value="chamber-07.html">Chamber 07</option>
+                    <option value="chamber-08.html">Chamber 08</option>
+                </select>
+            </div> 
+            <div class="hint-grid">
+                <div id="hint-container_1" class="hint-container">
+                    <div class="hint-container-header">
+                        <h2>Hint</h2>
+                        <h3>1 / 4</h3>
+                    </div>
+                    <div class="hint-container-body">
+                        <img src="../../assets/hints/portal/chamber-05_1.png">
+                    </div>
+                    <input type="button" value="Next hint" onclick="nextHint.call(this)"/>
+                </div>
+                <div id="hint-container_2" class="hint-container">
+                    <div class="hint-container-header">
+                        <h2>Hint</h2>
+                        <h3>2 / 4</h3>
+                    </div>
+                    <div class="hint-container-body">
+                        <p>Remember the solutions to the previous two chambers.</p>
+                    </div>
+                    <input type="button" value="Next hint" onclick="nextHint.call(this)"/>
+                </div>
+                <div id="hint-container_3" class="hint-container">
+                    <div class="hint-container-header">
+                        <h2>Hint</h2>
+                        <h3>3 / 4</h3>
+                    </div>
+                    <div class="hint-container-body">
+                        <p>Retrieve the cube in the pit and using a blue portal to bring it back to the buttons.</p>
+                    </div>
+                    <input type="button" value="Show solution" onclick="nextHint.call(this)"/>
+                </div>
+                <div id="hint-container_4" class="hint-container">
+                    <div class="hint-container-header">
+                        <h2>Solution</h2>
+                        <h3>4 / 4</h3>
+                    </div>
+                    <div class="hint-container-body">
+                        <p>Retrieve the cube on the raised platform by using a blue portal to reach the raised platform with the orange portal, then firing a blue portal at the raised platform with the cube and re-entering the orange portal. Place a cube on each button and proceed through the door to the chamber exit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav-container">
+                <input type="button" value="< Prev" onclick="location.href='chamber-04.html'"/>
+                <input type="button" value="Next >" onclick="location.href='chamber-06.html'"/>
+            </div>
+        </div>
+        <div id="credits">
+            <p>Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a></p>
+            <p>Screenshots showcase content from Portal, by <a target="_blank" href="https://www.valvesoftware.com/en/">Valve</a></p>
+        </div>
+    </body>
+</html>
